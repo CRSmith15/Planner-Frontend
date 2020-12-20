@@ -1,6 +1,5 @@
 import React from 'react'
 import {connect} from 'react-redux';
-import dayReducer from '../reducers/dayReducer'
 import DayList from '../components/DayList'
 import DayInput from '../components/DayInput'
 import {fetchDays} from '../actions/fetchDays'
@@ -16,7 +15,7 @@ class DaysContainer extends React.Component {
         return (
             <div>
                 <DayInput/>
-                <DayList/>
+                <DayList days={this.props.days}/>
             </div>
         )
     }
