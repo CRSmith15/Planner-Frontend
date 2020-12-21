@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {addDay} from '../actions/addDay'
 
 
 class DayInput extends React.Component {
@@ -11,10 +13,14 @@ class DayInput extends React.Component {
         })
     }
 
+    handleSubmit = () => {
+        
+    }
+
     render(){
         return(
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <label>Date of Event: </label>
                     <input type='text' placeholder='Date' value={this.state.date} name='date' onChange={this.handleChange}/><br/>
                     <label>Time of Event: </label>
@@ -26,4 +32,4 @@ class DayInput extends React.Component {
     }
 }
 
-export default DayInput
+export default connect(null, {addDay})(DayInput)
