@@ -14,7 +14,7 @@ class DaysContainer extends React.Component {
     render() {
         return (
             <div>
-                <DayInput/>
+                <DayInput/><br/><br/>
                 <DayList days={this.props.days}/>
             </div>
         )
