@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {Route} from 'react-router-dom'
 import DayList from '../components/DayList'
 import DayInput from '../components/DayInput'
+import ShowDay from '../components/ShowDay'
 import {fetchDays} from '../actions/fetchDays'
 
 
@@ -16,7 +17,8 @@ class DaysContainer extends React.Component {
         return (
             <div>
                 <Route path='/days/new' component={DayInput}/>
-                <Route exact path='/days' render={() => <DayList days={this.props.days}/>}/>
+                <Route path='/days/:id' render={(routerProps) => <ShowDay {...routerProps} days={this.props.days}/>}/>
+                <Route exact path='/days' render={(routerProps) => <DayList {...routerProps} days={this.props.days}/>}/>
             </div>
         )
     }
