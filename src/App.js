@@ -18,10 +18,5 @@ class App extends React.Component{
   
 }
 
-//const mapStateToProps = (state) => {
-//  return {
-//    days: state.days
-//  }
-//}
 
 export default connect()(App);
