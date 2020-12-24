@@ -1,9 +1,11 @@
 import React from 'react'
+import ShowDay from './ShowDay'
 
 const DayList = (props) => {
     return (
         <div>
-            {props.days.map(day => <li key={day.id}>{day.date} - {day.time}</li> )}
+            {props.days.map(day => 
+              <div key={day.id}><ShowDay day={day}/></div> )}
         </div>
     )
 }

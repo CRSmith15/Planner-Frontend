@@ -16,6 +16,10 @@ class DayInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addDay(this.state)
+        this.setState({
+            date: '',
+            time: ''
+        })
     }
 
     render(){
