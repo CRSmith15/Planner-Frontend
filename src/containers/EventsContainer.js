@@ -1,5 +1,7 @@
 import React from 'react'
-import EventInput from '../components/EventInput.js'
+import EventInput from '../components/EventInput'
+import EventList from '../components/EventList'
+
 
 class EventsContainer extends React.Component {
 
@@ -7,6 +9,7 @@ class EventsContainer extends React.Component {
         return (
             <div>
                 <EventInput/>
+                <EventList events={this.props.day && this.props.day.events}/>
             </div>
         )
     }

@@ -13,7 +13,7 @@ const ShowDay = (props) => {
           <h2>
               {day ? day.date : null} - {day ? day.time : null}
           </h2>
-          <EventsContainer/>
+          <EventsContainer day={day}/>
         </div>
     )
 }
