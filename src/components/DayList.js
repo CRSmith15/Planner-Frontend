@@ -1,11 +1,13 @@
 import React from 'react'
-import ShowDay from './ShowDay'
+import {Route, Link} from 'react-router-dom'
 
 const DayList = (props) => {
     return (
         <div>
             {props.days.map(day => 
-              <div key={day.id}><ShowDay day={day}/></div> )}
+              <li key={day.id}>
+                  <Link to={`/days/${day.id}`}>{day.date}</Link>
+            </li> )}
         </div>
     )
 }
