@@ -4,6 +4,14 @@ export default function dayReducer(state = {days: []}, action) {
             return {days: action.payload} 
         case 'ADD_DAY':
             return {...state, days: [...state.days, action.payload]}
+        case 'ADD_EVENT':
+            return {...state, days: state.days.map(day => {
+                if (day.id === action.payload.id) {
+                    return action.payload
+                } else {
+                    return day
+                }
+            })}
         default:
             return state
     }

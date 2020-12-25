@@ -8,7 +8,7 @@ class EventsContainer extends React.Component {
     render() {
         return (
             <div>
-                <EventInput/>
+                <EventInput day={this.props.day}/>
                 <EventList events={this.props.day && this.props.day.events}/>
             </div>
         )
