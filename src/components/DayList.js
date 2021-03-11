@@ -6,7 +6,7 @@ const DayList = (props) => {
         <div>
             {props.days.map(day => 
               <li key={day.id}>
-                  <Link to={`/days/${day.id}`}>{day.date}</Link>
+                  <Link to={`/days/${day.id}`}>{day.date}</Link> <button>Delete</button>
             </li> )}
         </div>
     )
