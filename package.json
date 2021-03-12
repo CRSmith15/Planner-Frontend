@@ -1,5 +1,6 @@
 {
   "name": "planner-frontend",
+  "homepage": "localhost:3000/days",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

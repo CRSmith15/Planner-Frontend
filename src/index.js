@@ -8,6 +8,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 
 import dayReducer from './reducers/dayReducer'
 import App from './App';
+import Home from './Home'
 
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

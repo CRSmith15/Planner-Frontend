@@ -13,7 +13,6 @@ export default function dayReducer(state = {days: []}, action) {
                 }
             })}
         case 'DELETE_EVENT':
-            debugger;
             return {...state, days: state.days.map(day => {
                 if (day.id === action.payload.id) {
                     return action.payload
