@@ -1,0 +1,12 @@
+.home h1 {
+    text-align: center;
+    text-decoration: underline rgb(3, 190, 3);
+}
+
+.home h2 {
+    text-align: center;
+}
+
+.home button {
+    margin: 8px;
+}

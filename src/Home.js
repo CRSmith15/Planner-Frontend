@@ -6,15 +6,15 @@ import './Home.css';
 class Home extends React.Component {
    render() {
  return (
- <div id="home">
- <h2>Plann Ahead!</h2>
- <h3>Click 
+ <div className="home">
+ <h1>Plann Ahead!</h1>
+ <h2>Click 
      <Link to ='/days'>
          <button>
              Here
         </button>
       </Link> 
-        to get started!</h3>
+        to get started!</h2>
  </div>
 );
 }
